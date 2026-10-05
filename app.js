@@ -33,5 +33,8 @@ function convertTemperature() {
     const celsiusResult = (fahrenheitTemp - 32) / 1.8;
     celsiusElement.textContent = celsiusResult.toFixed(1) + "°C";
     fahrenheitElement.textContent = fahrenheitTemp + "°F";
+  } else {
+    errorMessageElement.textContent =
+      "*Please insert a temperature to be converted.*";
   }
 }
